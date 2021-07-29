@@ -1,0 +1,44 @@
+.banner {
+  background-color: $banner;
+  height: 40rem;
+  font-size: 2rem;
+  padding-top: 1.5em auto;
+  @media (min-width: 48em) {
+    height: 50rem;
+  }
+}
+
+.banner__text {
+  height: 100%;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $white;
+  font-family: $monset;
+}
+
+.banner__title {
+  letter-spacing: 0.8rem;
+  margin-bottom: 1em;
+}
+
+.banner__subtitle {
+  font-size: 0.6em;
+  margin-bottom: 2.6em;
+  letter-spacing: 0.2rem;
+  color: $subtitle-banner;
+}
+
+.banner__btn {
+  background-color: $white;
+  color: $text-btn;
+  font-size: 0.8rem;
+  width: 14rem;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}

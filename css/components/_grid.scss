@@ -1,0 +1,15 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-rows: repeat(3, auto);
+  gap: 1rem;
+}
+.grid__main {
+  background-color: $banner;
+  height: 20rem;
+}
+
+.grid__image-1 {
+  background-color: $banner;
+  height: 10rem;
+}
