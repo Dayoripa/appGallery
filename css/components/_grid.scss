@@ -1,15 +1,127 @@
+// .grid {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+//   grid-template-rows: repeat(3, auto);
+//   gap: 1rem;
+// }
+// .grid__main {
+//   background-color: $banner;
+//   height: 20rem;
+//   margin-bottom: 2rem;
+// }
+
+// .grid__image-1 {
+//   background-color: $banner;
+// }
+
+// #grid__ima {
+//   width: 30rem;
+//   height: 30rem;
+// }
+
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  grid-template-rows: repeat(3, auto);
-  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
-.grid__main {
-  background-color: $banner;
-  height: 20rem;
+.grid__view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+svg {
+  margin: 1rem;
+  cursor: pointer;
 }
 
-.grid__image-1 {
+.grid__menu {
+  list-style: none;
+  max-width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1rem;
+  display: flex;
+  transition: 0.3s ease-in-out;
+}
+.grid__menu-item {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.11rem;
+  color: #7b7b7b;
+  cursor: pointer;
+}
+.grid__menu-item:hover {
   background-color: $banner;
-  height: 10rem;
+  padding: 0.4rem 1.2rem;
+  color: white;
+}
+.grid__menu-item:last-child {
+  margin-right: 0;
+}
+.grid__menu-item:first-child {
+  margin-left: 0;
+}
+.grid__menu-item--active {
+  background-color: $banner;
+  padding: 0.4rem 1rem;
+  color: white;
+}
+
+.grid__container {
+  max-width: 100%;
+  justify-content: center;
+  columns: 1;
+  gap: 0.2rem;
+  transition: 0.3s ease-in-out;
+}
+.grid__box {
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+  break-inside: avoid;
+  transition: 0.3s ease-in-out;
+}
+.grid__img {
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.grid__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid__btn {
+  width: 113px;
+  height: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  margin-top: 4rem;
+  font-family: "Montserrat";
+  font-size: 0.8rem;
+  letter-spacing: 0.11rem;
+  background-color: #ff5773;
+}
+.grid__button:hover {
+  background-color: #e2324f;
+}
+@media (min-width: 48em) {
+  .grid__container {
+    columns: 2;
+  }
+}
+@media (min-width: 62em) {
+  .grid__container {
+    columns: 3;
+    max-width: 70%;
+  }
 }
