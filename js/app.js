@@ -52,7 +52,7 @@ app.addEventListener('click', (e) => {
       }
   }
 
-const fechDate = async(category = 'dogs') =>{
+const fechDate = async(category = 'all') =>{
 
     const key = '8PoHaaF1QBWLgByh-uj4owUNFLQAVlyAZ8li4HDgskE';
     const url =`https://api.unsplash.com/search/photos/?query=${category}&client_id=${key}`;
@@ -93,3 +93,4 @@ const cleanHTML = () =>{
         main.removeChild(main.firstChild)
     }
 }
+

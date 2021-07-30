@@ -21,7 +21,19 @@ photography.addEventListener('click', (e) => {
     searchCategory(e);
 });
 
-app.addEventListener('click', (e) => {
+ap.addEventListener('click', (e) => {
     cleanHTML(); 
     searchCategory(e);
 });
+
+const div = document.createElement('div');
+
+div.innerHTML = `
+    <p>CREATIVE LOGO</p>
+    <hr class="line">
+    <h4>Branding</h4>
+`;
+
+div.classList.add('grid-main');
+const inserImage = document.querySelector('.grid__container');
+inserImage.insertBefore(div, inserImage.children[1]);
