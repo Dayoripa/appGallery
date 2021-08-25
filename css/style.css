@@ -412,6 +412,10 @@ svg {
   color: white;
 }
 
+.item2:first-child {
+  grid-row: span 3;
+}
+
 .grid__container {
   max-width: 100%;
   -webkit-box-pack: center;
@@ -436,6 +440,8 @@ svg {
 
 .grid__img {
   width: 100%;
+  height: auto;
+  height: 100%;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   cursor: pointer;

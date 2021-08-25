@@ -51,6 +51,9 @@ svg {
   color: white;
 }
 
+.item2:first-child {
+  grid-row: span 3;
+}
 .grid__container {
   max-width: 100%;
   justify-content: center;
@@ -65,11 +68,15 @@ svg {
   break-inside: avoid;
   transition: 0.3s ease-in-out;
 }
+
 .grid__img {
   width: 100%;
+  height: auto;
+  height: 100%;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
+
 .grid__button {
   display: flex;
   align-items: center;

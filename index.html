@@ -22,7 +22,7 @@
                 <nav class="menu">
                     <ul class="menu__nav">
                         <li class="menu__list menu__list--selected">
-                            <a href="#" class="menu__links menu__links--selected">all</a>
+                            <a href="#" id="cargarApi" class="menu__links menu__links--selected">all</a>
                         </li>
                         <li class="menu__list">
                             <a href="#" class="menu__links  menu__links--color">branding</a>
@@ -100,11 +100,11 @@
                 </div>
             
                 <ul id="listMenu" class="grid__menu">
-                    <li class="grid__menu-item grid__menu-item--active"><a href="#"></a>All</li>
-                    <li class="grid__menu-item"><a href="#Branding"></a>Branding</li>
-                    <li class="grid__menu-item"><a href="#Web"></a>Web</li>
-                    <li class="grid__menu-item"><a href="#"></a>Photography</li>
-                    <li class="grid__menu-item"><a href="#"></a>App</li>
+                    <li class="grid__menu-item grid__menu-item--active" id="all"><a href="#"></a>All</li>
+                    <li class="grid__menu-item menu__links"><a href="#Branding"></a>Branding</li>
+                    <li class="grid__menu-item menu__links"><a href="#Web"></a>Web</li>
+                    <li class="grid__menu-item menu__links"><a href="#"></a>Photography</li>
+                    <li class="grid__menu-item menu__links"><a href="#"></a>App</li>
                 </ul>
 
                 <div class="grid__container grid__box">
@@ -148,8 +148,7 @@
         </section>
     </template>
 
-
-    <script src="./js/app.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
